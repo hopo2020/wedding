@@ -100,5 +100,9 @@ html, body{
     .heading {
         font-size: 4em;
     }
-  }
+}
 
+.navi-icon{
+width: 3.125em;
+height:  3.125em;
+}
