@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>카카오 링크 보내기용</title>
+</head>
+<body>
+
+<a id="create-kakao-link-btn1" href="javascript:;">
+	근웅이용
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+    alt="카카오링크 보내기 버튼"
+  />
+</a>
+
+<a id="create-kakao-link-btn2" href="javascript:;">
+	은샘이용
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+    alt="카카오링크 보내기 버튼"
+  />
+</a>
+
+<a id="create-kakao-link-btn3" href="javascript:;">
+	근웅이 부모님용
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+    alt="카카오링크 보내기 버튼"
+  />
+</a>
+
+<a id="create-kakao-link-btn4" href="javascript:;">
+	은샘이 부모님용
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+    alt="카카오링크 보내기 버튼"
+  />
+</a>
+
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script type="text/javascript">
+    
+
+    Kakao.init('72350930c92efd1f9392ccee2cae47e6');
+
+	Kakao.Link.createDefaultButton({
+    container: '#create-kakao-link-btn1',
+    objectType: 'location',
+    address: '서울 종로구 지봉로 19 시즌빌딩 11층',
+    addressTitle: 'SW컨벤션센터',
+    content: {
+      title: '장가간다 근웅이',
+      description: '2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
+      imageUrl:
+        'https://hopo2020.github.io/wedding/img/DSC07423.jpg',
+      link: {
+        mobileWebUrl: 'https://hopo2020.github.io/wedding/',
+        webUrl: 'https://hopo2020.github.io/wedding/',
+      },
+    },
+    buttons: [
+      {
+        title: '웹으로 보기',
+        link: {
+          mobileWebUrl: 'https://hopo2020.github.io/wedding/',
+          webUrl: 'https://hopo2020.github.io/wedding/',
+        },
+      },
+    ],
+  });
+
+
+Kakao.Link.createDefaultButton({
+    container: '#create-kakao-link-btn2',
+    objectType: 'location',
+    address: '서울 종로구 지봉로 19 시즌빌딩 11층',
+    addressTitle: 'SW컨벤션센터',
+    content: {
+      title: '시집간다 은샘이',
+      description: '2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
+      imageUrl:
+        'https://hopo2020.github.io/wedding/img/DSC07423.jpg',
+      link: {
+        mobileWebUrl: 'https://hopo2020.github.io/wedding/',
+        webUrl: 'https://hopo2020.github.io/wedding/',
+      },
+    },
+    buttons: [
+      {
+        title: '웹으로 보기',
+        link: {
+          mobileWebUrl: 'https://hopo2020.github.io/wedding/',
+          webUrl: 'https://hopo2020.github.io/wedding/',
+        },
+      },
+    ],
+  });
+
+
+
+Kakao.Link.createDefaultButton({
+    container: '#create-kakao-link-btn3',
+    objectType: 'location',
+    address: '서울 종로구 지봉로 19 시즌빌딩 11층',
+    addressTitle: 'SW컨벤션센터',
+    content: {
+      title: '근웅이 장가 보냅니다.',
+      description: '2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
+      imageUrl:
+        'https://hopo2020.github.io/wedding/img/DSC07423.jpg',
+      link: {
+        mobileWebUrl: 'https://hopo2020.github.io/wedding/',
+        webUrl: 'https://hopo2020.github.io/wedding/',
+      },
+    },
+    buttons: [
+      {
+        title: '웹으로 보기',
+        link: {
+          mobileWebUrl: 'https://hopo2020.github.io/wedding/',
+          webUrl: 'https://hopo2020.github.io/wedding/',
+        },
+      },
+    ],
+  });
+
+
+Kakao.Link.createDefaultButton({
+    container: '#create-kakao-link-btn4',
+    objectType: 'location',
+    address: '서울 종로구 지봉로 19 시즌빌딩 11층',
+    addressTitle: 'SW컨벤션센터',
+    content: {
+      title: '은샘이 시집보냅니다. 보냅니다.',
+      description: '2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
+      imageUrl:
+        'https://hopo2020.github.io/wedding/img/DSC07423.jpg',
+      link: {
+        mobileWebUrl: 'https://hopo2020.github.io/wedding/',
+        webUrl: 'https://hopo2020.github.io/wedding/',
+      },
+    },
+    buttons: [
+      {
+        title: '웹으로 보기',
+        link: {
+          mobileWebUrl: 'https://hopo2020.github.io/wedding/',
+          webUrl: 'https://hopo2020.github.io/wedding/',
+        },
+      },
+    ],
+  })
+
+
+</script>
+</body>
+</html>
