@@ -7,18 +7,19 @@
 
 *{
     /*font-family: 'Quicksand', sans-serif;*/
-    font-size: 16px;
+    /*font-size: 16px;*/
     color: #222;
 }
 html, body{
     margin: 0;
-    height: 100vh;
+    /*height: 100vh;*/
     text-align: center;
 }
 .header{
-    background-image: url(./img/hero.jpeg);
+    background-image: url(./img/DSC00543.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 60%;
+    /*background-position: 50% 60%;*/
+    background-position: 0% 60%;
     background-attachment: scroll;
     background-size: cover;
     /*height: 40vh;*/
@@ -103,6 +104,11 @@ html, body{
 }
 
 .navi-icon{
-width: 3.125em;
-height:  3.125em;
+    width: 3.125em;
+    height: 3.125em;
 }
+.parent-name {
+  /*font-weight: bold;*/
+  font-size: 1.3em;
+}
+
