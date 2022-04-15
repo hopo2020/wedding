@@ -113,13 +113,13 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="https://image.edaily.co.kr/images/Photo/files/NP/S/2020/12/PS20121300001.jpg" class="d-block w-100" alt="...">
+                  <img src="./img/DSC07423.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                   <img src="./img/DSC00583.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="https://file.mk.co.kr/meet/neds/2021/08/image_readtop_2021_798013_16292464744754599.jpg" class="d-block w-100" alt="...">
+                  <img src="./img/DSC06977.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -269,6 +269,15 @@
       </div>
     </section>
     <footer>
+        
+<a id="create-kakao-link-btn" href="javascript:;">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+    alt="카카오링크 보내기 버튼"
+  />
+</a>
+
+
         신랑이 만드는 중
     </footer>
     <!-- <script src="./js/smooth-scroll.polyfills.min.js"></script> -->
@@ -285,6 +294,33 @@
             coordType:'wgs84'
         })
     }
+
+
+Kakao.Link.createDefaultButton({
+    container: '#create-kakao-link-btn',
+    objectType: 'feed',
+    content: {
+      title: '근웅이 장가감',
+      description: '2022.11.12. SW컨벤션센터',
+      imageUrl:
+        'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+      link: {
+        mobileWebUrl: 'https://developers.kakao.com',
+        webUrl: 'https://developers.kakao.com',
+      },
+    },
+    buttons: [
+      {
+        title: '웹으로 보기',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com',
+        },
+      },
+    ],
+  })
+
+
 
     $('#btnCollapse1').on('click', function() {
       $('#collapse1').slideToggle(300, function() {
