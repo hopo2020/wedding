@@ -311,6 +311,8 @@
       tempElem.select();
       document.execCommand("copy");
       document.body.removeChild(tempElem);
+
+      alert($(this).data('copy') + '\n복사완료');
     });
     </script>
     <style>
