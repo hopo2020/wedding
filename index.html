@@ -176,7 +176,7 @@
             <a rel="noopener" target="_blank" href="http://naver.me/FuWq0nRy">
               <img class="navi-icon" src="https://www.itscard.co.kr/mobile/new_m/mcard/images/common/location_navermap.png"/>
             </a>
-            <a rel="noopener" target="_blank" href="https://map.kakao.com/?q=SW%EC%BB%A8%EB%B2%A4%EC%85%98%EC%84%BC%ED%84%B0">
+            <a rel="noopener" target="_blank" href="https://map.kakao.com/link/to/7918739">
               <img class="navi-icon" src="https://www.itscard.co.kr/mobile/new_m/mcard/images/common/location_kakaomap.png"/>
             </a>
 
@@ -370,7 +370,7 @@
       </div>
     </section>
     <footer>
-      신랑이 만드는 중
+      가정의 행복을 기원합니다.
     </footer>
     <!-- <script src="./js/smooth-scroll.polyfills.min.js"></script> -->
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
@@ -389,22 +389,17 @@
         })
     }
 
+    var mapContainer = document.getElementById('map');
+    var mapOption = {
+      center: new kakao.maps.LatLng(37.57151934868425, 127.015143016544734), 
+      level: 2
+    };
 
-var mapContainer = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-var mapOption = { //지도를 생성할 때 필요한 기본 옵션
-  center: new kakao.maps.LatLng(37.57151934868425, 127.015143016544734), //지도의 중심좌표.
-  level: 2 //지도의 레벨(확대, 축소 정도)
-};
-
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
-// 지도를 클릭한 위치에 표출할 마커입니다
-var marker = new kakao.maps.Marker({ 
-    // 지도 중심좌표에 마커를 생성합니다 
-    position: map.getCenter() 
-}); 
-// 지도에 마커를 표시합니다
-marker.setMap(map);
+    var map = new kakao.maps.Map(mapContainer, mapOption);
+    var marker = new kakao.maps.Marker({ 
+        position: map.getCenter() 
+    }); 
+    marker.setMap(map);
 
   // Kakao.Link.createDefaultButton({
   //   container: '#create-kakao-link-btn',

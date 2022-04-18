@@ -216,7 +216,3 @@ footer {
     height:  15em;
 }
 
-.carousel-indicators [data-bs-target]{
-    background: #ddd !important;
-        background-clip: padding-box;
-}
