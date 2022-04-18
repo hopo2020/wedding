@@ -22,12 +22,48 @@
 <a id="create-kakao-link-btn4" href="javascript:;">
 	은샘이 부모님용
 </a>
-
+<br/><br/><br/>
+* 커스텀
+<br/>
+<table border="1">
+  <tr>
+    <td>제목 </td>
+    <td><input id="title"></td>
+  </tr>
+  <tr>
+    <td>내용 </td>
+    <td><input id="content"></td>
+  </tr>
+  <tr>
+    <td>이미지</td>
+    <td>
+      <select id="image">
+        <option value="https://hopo2020.github.io/wedding/img/DSC07423.jpg">은샘이</option>
+        <option value="https://hopo2020.github.io/wedding/img/IMG_0114.jpg">근웅이</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>대상</td>
+    <td>
+      <select id="target">
+        <option value="parent">부모님</option>
+        <option value="friend">친구들</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <a id="create-kakao-link-btn5" href="javascript:;">보내기</a>
+    </td>
+  </tr>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script type="text/javascript">
     
 
-    Kakao.init('72350930c92efd1f9392ccee2cae47e6');
+  Kakao.init('72350930c92efd1f9392ccee2cae47e6');
 
 	Kakao.Link.createDefaultButton({
     container: '#create-kakao-link-btn1',
@@ -135,7 +171,36 @@ Kakao.Link.createDefaultButton({
         },
       },
     ],
-  })
+  });
+
+
+
+  Kakao.Link.createDefaultButton({
+    container: '#create-kakao-link-btn5',
+    objectType: 'location',
+    address: '서울 종로구 지봉로 19 시즌빌딩 11층',
+    addressTitle: 'SW컨벤션센터',
+    content: {
+      title:  $('#title').val(),//'장가간다 근웅이',
+      description:  $('#content').val(),//'2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
+      imageUrl: $('#image').val(),
+        //'https://hopo2020.github.io/wedding/img/DSC07423.jpg',
+      link: {
+        mobileWebUrl: 'https://hopo2020.github.io/wedding/',
+        webUrl: 'https://hopo2020.github.io/wedding/',
+      },
+    },
+    buttons: [
+      {
+        title: '웹으로 보기',
+        link: {
+          mobileWebUrl: 'https://hopo2020.github.io/wedding/',
+          webUrl: 'https://hopo2020.github.io/wedding/',
+        },
+      },
+    ],
+  });
+
 
 
 </script>
