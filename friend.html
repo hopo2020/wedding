@@ -305,9 +305,9 @@
       }
     });
 
-    const setDate = new Date("2022-06-12T00:00:00+0900");
+    const setDate = new Date("2022-06-13T11:00:00+0900");
     const setDateYear = setDate.getFullYear();
-    const setDateMonth = setDate.getMonth() + 1;
+    const setDateMonth = setDate.getMonth();
     const setDateDay = setDate.getDate();
 
     const now = new Date();
@@ -315,7 +315,15 @@
     const distance = setDate.getTime() - now.getTime();
     
     const day = Math.floor(distance/(1000*60*60*24));
-    $('.dday').html('D-' + day);
+    
+    if (day == 0) {
+      $('.dday').html('D-Day');
+    } else if (day > 0) {
+      $('.dday').html('D-' + day);
+    } else {
+      // $('.dday').html('');
+    }
+    
 
     </script>
 
