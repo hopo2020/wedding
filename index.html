@@ -439,11 +439,17 @@
       }
     });
 
-    var today = new Date();
-    var dday = new Date(2022, 6, 18);
-    var gap = dday.getTime() - today.getTime();
-    var result = Math.ceil(gap / (1000 * 60* 60 * 24));
-    $('.dday').html('D-' + result);
+    const setDate = new Date("2022-06-12T00:00:00+0900");
+    const setDateYear = setDate.getFullYear();
+    const setDateMonth = setDate.getMonth() + 1;
+    const setDateDay = setDate.getDate();
+
+    const now = new Date();
+
+    const distance = setDate.getTime() - now.getTime();
+    
+    const day = Math.floor(distance/(1000*60*60*24));
+    $('.dday').html('D-' + day);
 
 
 
