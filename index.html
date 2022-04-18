@@ -27,7 +27,9 @@
         
         <div class="card-body">
           <h5 class="card-title sub-title">6. 12</h5>
+          <span style="display: block;" class="dday"></span>
           <p class="card-text">
+            
             <span style="display: block; margin-top: 30px;">결혼합니다.</span>
             <span style="display: block;">예쁘게</span>
             <span style="display: block;">잘 살겠습니다.</span>
@@ -35,7 +37,7 @@
           <img class="card-img-top" src="./img/DSC00583.jpg" alt="Card image cap"  style="margin: 30px 0;">
           <p class="card-text">
             2022. 6. 12. 일요일 오전 11시<br/>
-            SW컨벤션센터
+            <span style="font-weight: 600;">SW컨벤션센터</span>
           </p>
           <!-- <p class="sub-text" style="margin-top: 40px;">
             <span class="parent-name">박명순</span> o <span class="parent-name">최선화</span> 의 장남 <span class="parent-name">근웅</span>
@@ -436,6 +438,12 @@
         alert('장가간다 근웅이!!!!!');
       }
     });
+
+    var today = new Date();
+    var dday = new Date(2022, 6, 18);
+    var gap = dday.getTime() - today.getTime();
+    var result = Math.ceil(gap / (1000 * 60* 60 * 24));
+    $('.dday').html('D-' + result);
 
 
 
