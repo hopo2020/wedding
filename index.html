@@ -318,7 +318,7 @@
                       </div>
                       <div class="row">
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="492302-01-098999" aria-label="국민은행 420802-01-006379 " readonly aria-describedby="button-addon2" style="font-size: 0.8em;">
+                          <input type="text" class="form-control" placeholder="420802-01-006379" aria-label="국민은행 420802-01-006379 " readonly aria-describedby="button-addon2" style="font-size: 0.8em;">
                           <button class="btn btn-outline-secondary btnCopy" type="button" data-copy="국민은행 420802-01-006379 최선화">복사</button>
                         </div>
                     </div>
@@ -439,9 +439,9 @@
       }
     });
 
-    const setDate = new Date("2022-06-13T11:00:00+0900");
+    const setDate = new Date("2022-06-12T00:00:00+0900");
     const setDateYear = setDate.getFullYear();
-    const setDateMonth = setDate.getMonth();
+    const setDateMonth = setDate.getMonth() + 1;
     const setDateDay = setDate.getDate();
 
     const now = new Date();
@@ -449,14 +449,7 @@
     const distance = setDate.getTime() - now.getTime();
     
     const day = Math.floor(distance/(1000*60*60*24));
-    
-    if (day == 0) {
-      $('.dday').html('D-Day');
-    } else if (day > 0) {
-      $('.dday').html('D-' + day);
-    } else {
-      // $('.dday').html('');
-    }
+    $('.dday').html('D-' + day);
 
 
 
