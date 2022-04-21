@@ -34,7 +34,7 @@
           <span style="display: block;" class="dday"></span>
           <p class="card-text">
             
-            <span style="display: block; margin-top: 30px;">결혼합니다.</span>
+            <span class="m-text" style="display: block; margin-top: 30px;">결혼합니다.</span>
             <span style="display: block;">예쁘게</span>
             <span style="display: block;">잘 살겠습니다.</span>
           </p>
@@ -309,23 +309,30 @@
       }
     });
 
-    const setDate = new Date("2022-06-13T11:00:00+0900");
-    const setDateYear = setDate.getFullYear();
-    const setDateMonth = setDate.getMonth();
-    const setDateDay = setDate.getDate();
-
+ const setDate = new Date("2022-06-12T11:00:00+0900");
     const now = new Date();
-
     const distance = setDate.getTime() - now.getTime();
     
     const day = Math.floor(distance/(1000*60*60*24));
-    
-    if (day == 0) {
-      $('.dday').html('D-Day');
-    } else if (day > 0) {
+    const time = Math.floor(distance/(1000*60*60));
+    const min = Math.floor(distance/(1000*60));
+
+
+    if (day > 2) {
       $('.dday').html('D-' + day);
+    } else if (day >= -1) {
+      if (time > 0) {
+        $('.dday').html(time + ' 시간 후');
+      } else if (min > 0) {
+        $('.dday').html(min + ' 분 후');
+      } else if (min > -60)  {
+        $('.dday').html('결혼 중 입니다.');
+      } else {
+        $('.m-text').html('결혼 했습니다.');
+      }
     } else {
-      // $('.dday').html('');
+      $('.dday').html(day * -1 -1 + ' 일 전');
+      $('.m-text').html('결혼 했습니다.');
     }
     
 
