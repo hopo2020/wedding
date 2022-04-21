@@ -211,5 +211,9 @@ footer {
     background: #eee;
     padding: 20px 0;
 }
-
+.main-title {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 3em;
+    font-weight: 400;
+}
 
