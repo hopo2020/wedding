@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Se-hwa';
+/*    font-family: 'Se-hwa';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_10@1.0/Se-hwa.woff') format('woff');
-    font-weight: normal;
+*/    font-weight: normal;
     font-style: normal;
 }
 
@@ -211,9 +211,11 @@ footer {
     background: #eee;
     padding: 20px 0;
 }
+@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }
 .main-title {
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 3em;
+    /*font-family: 'Nanum Pen Script', cursive;*/
+    font-family: 'NotoSerifKR';
+    font-size: 2em;
     font-weight: 400;
 }
 
@@ -226,3 +228,4 @@ footer {
 .custom_typecontrol .selected_btn {color:#fff;background:#ddd; line-height: 4em; opacity: 80%;}
 .custom_typecontrol .selected_btn:hover {color:#fff;}   
 .hidden {display: none;}
+#panel {z-index: 1; width:100%; height: 350px; position: absolute; top:0;}

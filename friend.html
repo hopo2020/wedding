@@ -30,7 +30,10 @@
       <div class="card" >
         
         <div class="card-body">
-          <h5 class="card-title sub-title main-title">근웅 & 은샘</h5>
+          <h5 class="card-title sub-title main-title">
+            박근웅 & 조은샘
+            <span style="display: block; margin-top: 10px; font-size: 0.3em;">Wedding Invitation</span>
+          </h5>
           <span style="display: block;" class="dday"></span>
           <p class="card-text">
             
@@ -189,6 +192,7 @@
             <p style="margin: 30px auto;">지하철 1호선 / 6호선<br/><span style="font-weight: 800;">동묘앞역 6번출구 앞</span></p>
             <div class="map_wrap">
               <div id="map" style="width:100%;height:350px;"></div>
+              <div id="panel"></div>
               <div class="custom_typecontrol radius_border">
                 <span id="btnLock" class="selected_btn" onclick="setMapLock();">
                   <i class="fa-solid fa-lock"></i>
@@ -276,7 +280,7 @@
     </section>
 
     <footer>
-      가정의 행복을 기원합니다.
+      Wedding Ceremony.
     </footer>
     <!-- <script src="./js/smooth-scroll.polyfills.min.js"></script> -->
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
@@ -319,9 +323,11 @@
       if (flagMap) { // 잠금
         $('.fa-lock-open').addClass('hidden');
         $('.fa-lock').removeClass('hidden');
+        $('#panel').removeClass('hidden');
       } else { // 열림
         $('.fa-lock').addClass('hidden');
         $('.fa-lock-open').removeClass('hidden');
+        $('#panel').addClass('hidden');
       }
       flagMap = !flagMap;
       setMapDraggable(flagMap);
