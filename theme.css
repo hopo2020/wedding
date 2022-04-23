@@ -221,7 +221,7 @@ footer {
 
 .carousel {
     padding: 50px;
-    height: 800px;
+    height: 95vh;
     background: #ddd;
 }
 .carousel-control-prev, .carousel-control-next {
