@@ -112,12 +112,11 @@ header .heading {
     padding-bottom: 20px;
 }
 
+a{
+  text-decoration: none;
+}
 
-    a{
-      text-decoration: none;
-    }
-
-    @use postcss-preset-env;
+@use postcss-preset-env;
 
 /* ---------- FONTAWESOME ---------- */
 /* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
@@ -230,7 +229,9 @@ footer {
 
 .carousel-control-prev, .carousel-control-next {
     width: 30%;
+    
 }
+
 .map_wrap {position:relative;overflow:hidden;width:100%;height:350px;}
 
 .radius_border{border:1px solid #919191;border-radius:15px;}     
