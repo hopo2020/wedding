@@ -7,57 +7,32 @@
 </head>
 <body>
 
-<a id="create-kakao-link-btn1" href="javascript:;">
-	근웅이용
-</a>
-<br/>
-<a id="create-kakao-link-btn2" href="javascript:;">
-	은샘이용
-</a>
-<br/>
-<a id="create-kakao-link-btn3" href="javascript:;">
-	근웅이 부모님용
-</a>
-<br/>
-<a id="create-kakao-link-btn4" href="javascript:;">
-	은샘이 부모님용
-</a>
-<br/><br/><br/>
-* 커스텀
-<br/>
-<table border="1">
-  <tr>
-    <td>제목 </td>
-    <td><input id="title"></td>
-  </tr>
-  <tr>
-    <td>내용 </td>
-    <td><input id="content"></td>
-  </tr>
-  <tr>
-    <td>이미지</td>
-    <td>
-      <select id="image">
-        <option value="https://hopo2020.github.io/wedding/img/DSC07423.jpg">은샘이</option>
-        <option value="https://hopo2020.github.io/wedding/img/IMG_0114.jpg">근웅이</option>
-      </select>
-    </td>
-  </tr>
-  <tr>
-    <td>대상</td>
-    <td>
-      <select id="target">
-        <option value="parent">부모님</option>
-        <option value="friend">친구들</option>
-      </select>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <a id="create-kakao-link-btn5" href="javascript:;">보내기</a>
-    </td>
-  </tr>
-</table>
+<div style="text-align: center;">
+  <a id="create-kakao-link-btn1" href="javascript:;">
+  	<button>근웅이용</button>
+  </a>
+  <br/>
+  <a id="create-kakao-link-btn2" href="javascript:;">
+  	<button>은샘이용</button>
+  </a>
+  <br/>
+  <a id="create-kakao-link-btn3" href="javascript:;">
+  	<button>부모님용 (계좌번호 있음)</button>
+  </a>
+  <br/>
+  <a id="create-kakao-link-btn4" href="javascript:;">
+  	<button>부모님용 (계좌번호 없음)</button>
+  </a>
+</div>
+
+<style>
+  button {
+    width:  400px;
+    height: 80px;
+    margin: 20px;
+    font-size: 1em;
+  }
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script type="text/javascript">
@@ -71,21 +46,21 @@
     address: '서울 종로구 지봉로 19 시즌빌딩 11층',
     addressTitle: 'SW컨벤션센터',
     content: {
-      title: '장가간다 근웅이',
+      title: '장가간다 근웅이!!!',
       description: '2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
       imageUrl:
-        'https://hopo2020.github.io/wedding/img/DSC07423.jpg',
+        'https://hopo2020.github.io/wedding/img/v5.jpg',
       link: {
-        mobileWebUrl: 'https://hopo2020.github.io/wedding/',
-        webUrl: 'https://hopo2020.github.io/wedding/',
+        mobileWebUrl: 'https://hopo2020.github.io/wedding/friend',
+        webUrl: 'https://hopo2020.github.io/wedding/friend',
       },
     },
     buttons: [
       {
         title: '웹으로 보기',
         link: {
-          mobileWebUrl: 'https://hopo2020.github.io/wedding/',
-          webUrl: 'https://hopo2020.github.io/wedding/',
+          mobileWebUrl: 'https://hopo2020.github.io/wedding/friend',
+          webUrl: 'https://hopo2020.github.io/wedding/friend',
         },
       },
     ],
@@ -98,21 +73,21 @@ Kakao.Link.createDefaultButton({
     address: '서울 종로구 지봉로 19 시즌빌딩 11층',
     addressTitle: 'SW컨벤션센터',
     content: {
-      title: '시집간다 은샘이',
+      title: '시집간다 은샘이!!!',
       description: '2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
       imageUrl:
-        'https://hopo2020.github.io/wedding/img/IMG_0114.jpg',
+        'https://hopo2020.github.io/wedding/img/v5.jpg',
       link: {
-        mobileWebUrl: 'https://hopo2020.github.io/wedding/',
-        webUrl: 'https://hopo2020.github.io/wedding/',
+        mobileWebUrl: 'https://hopo2020.github.io/wedding/friend',
+        webUrl: 'https://hopo2020.github.io/wedding/friend',
       },
     },
     buttons: [
       {
         title: '웹으로 보기',
         link: {
-          mobileWebUrl: 'https://hopo2020.github.io/wedding/',
-          webUrl: 'https://hopo2020.github.io/wedding/',
+          mobileWebUrl: 'https://hopo2020.github.io/wedding/friend',
+          webUrl: 'https://hopo2020.github.io/wedding/friend',
         },
       },
     ],
@@ -126,21 +101,21 @@ Kakao.Link.createDefaultButton({
     address: '서울 종로구 지봉로 19 시즌빌딩 11층',
     addressTitle: 'SW컨벤션센터',
     content: {
-      title: '근웅이 장가 보냅니다.',
-      description: '2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
+      title: '결혼합니다.',
+      description: '박명순, 최선화 장남 박근웅\n조근호, 서하진 장녀 은샘\n2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
       imageUrl:
-        'https://hopo2020.github.io/wedding/img/DSC07423.jpg',
+        'https://hopo2020.github.io/wedding/img/v5.jpg',
       link: {
-        mobileWebUrl: 'https://hopo2020.github.io/wedding/',
-        webUrl: 'https://hopo2020.github.io/wedding/',
+        mobileWebUrl: 'https://hopo2020.github.io/wedding/parent',
+        webUrl: 'https://hopo2020.github.io/wedding/parent',
       },
     },
     buttons: [
       {
         title: '웹으로 보기',
         link: {
-          mobileWebUrl: 'https://hopo2020.github.io/wedding/',
-          webUrl: 'https://hopo2020.github.io/wedding/',
+          mobileWebUrl: 'https://hopo2020.github.io/wedding/parent',
+          webUrl: 'https://hopo2020.github.io/wedding/parent',
         },
       },
     ],
@@ -153,10 +128,10 @@ Kakao.Link.createDefaultButton({
     address: '서울 종로구 지봉로 19 시즌빌딩 11층',
     addressTitle: 'SW컨벤션센터',
     content: {
-      title: '은샘이 시집보냅니다. 보냅니다.',
-      description: '2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
+      title: '결혼합니다.',
+      description: '박명순, 최선화 장남 박근웅\n조근호, 서하진 장녀 은샘\n2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
       imageUrl:
-        'https://hopo2020.github.io/wedding/img/DSC07423.jpg',
+        'https://hopo2020.github.io/wedding/img/v5.jpg',
       link: {
         mobileWebUrl: 'https://hopo2020.github.io/wedding/',
         webUrl: 'https://hopo2020.github.io/wedding/',
@@ -174,32 +149,6 @@ Kakao.Link.createDefaultButton({
   });
 
 
-
-  Kakao.Link.createDefaultButton({
-    container: '#create-kakao-link-btn5',
-    objectType: 'location',
-    address: '서울 종로구 지봉로 19 시즌빌딩 11층',
-    addressTitle: 'SW컨벤션센터',
-    content: {
-      title:  $('#title').val(),//'장가간다 근웅이',
-      description:  $('#content').val(),//'2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
-      imageUrl: $('#image').val(),
-        //'https://hopo2020.github.io/wedding/img/DSC07423.jpg',
-      link: {
-        mobileWebUrl: 'https://hopo2020.github.io/wedding/',
-        webUrl: 'https://hopo2020.github.io/wedding/',
-      },
-    },
-    buttons: [
-      {
-        title: '웹으로 보기',
-        link: {
-          mobileWebUrl: 'https://hopo2020.github.io/wedding/',
-          webUrl: 'https://hopo2020.github.io/wedding/',
-        },
-      },
-    ],
-  });
 
 
 

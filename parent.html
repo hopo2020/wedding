@@ -288,11 +288,51 @@
               <a href="sms:01062274048"><i class="fas fa-sms" style="font-size: 1.4em;"></i></a>
             </p>
           </p>
+
+          <p class="card-text">
+            <p>
+              <button class="btn btn-outline-secondary" id="btnCollapse1" type="button" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false" aria-controls="collapse1">신랑측</button>
+              <button class="btn btn-outline-secondary" id="btnCollapse2" type="button" data-bs-toggle="collapse" data-bs-target="" aria-expanded="false" aria-controls="collapse2">신부측</button>
+            </p>
+
+            <div class="row" style="padding: 20px;">
+              <div class="col">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="collapse1">
+                    <div class="card card-body" style="padding: 10px !important;">
+                      <p>
+                        박명순
+                        <a href="tel:01053110383"><i class="fas fa-mobile" style="font-size: 1.4em;"></i></a>
+                        <a href="sms:01053110383"><i class="fas fa-sms" style="font-size: 1.4em;"></i></a>
+                      </p>
+                        <p>
+                        최선화
+                        <a href="tel:01052193388"><i class="fas fa-mobile" style="font-size: 1.4em;"></i></a>
+                        <a href="sms:01052193388"><i class="fas fa-sms" style="font-size: 1.4em;"></i></a>
+                      </p>
+                   </div>
+                </div>
+                <div class="collapse multi-collapse" id="collapse2">
+                  <div class="card card-body" style="padding: 10px !important;">
+                    <p>
+                      조근호
+                      <a href="tel:01083584048"><i class="fas fa-mobile" style="font-size: 1.4em;"></i></a>
+                      <a href="sms:01083584048"><i class="fas fa-sms" style="font-size: 1.4em;"></i></a>
+                    </p>
+                    <p>
+                      서하진
+                      <a href="tel:01083504048"><i class="fas fa-mobile" style="font-size: 1.4em;"></i></a>
+                      <a href="sms:01083504048"><i class="fas fa-sms" style="font-size: 1.4em;"></i></a>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </p>
         </div>
       </div>
     </section>
-
-
     <footer>
       Wedding Ceremony.
     </footer>
@@ -346,40 +386,6 @@
       flagMap = !flagMap;
       setMapDraggable(flagMap);
     }
-
-    // <span id="btnLock" class="selected_btn" onclick="setMapLock()">
-    //               <i class="fa-solid fa-lock"></i>
-    //               <i class="fa-solid fa-lock-open hidden"></i>
-
-    // $('#map').append('<i class="fa-solid fa-lock"></i>');
-
-    
-
-  // Kakao.Link.createDefaultButton({
-  //   container: '#create-kakao-link-btn',
-  //   objectType: 'location',
-  //   address: '서울 종로구 지봉로 19 시즌빌딩 11층',
-  //   addressTitle: 'SW컨벤션센터',
-  //   content: {
-  //     title: '장가간다 근웅이',
-  //     description: '2022. 06. 12. 11:00',
-  //     imageUrl:
-  //       'https://hopo2020.github.io/wedding/img/DSC07423.jpg',
-  //     link: {
-  //       mobileWebUrl: 'https://hopo2020.github.io/wedding/',
-  //       webUrl: 'https://hopo2020.github.io/wedding/',
-  //     },
-  //   },
-  //   buttons: [
-  //     {
-  //       title: '웹으로 보기',
-  //       link: {
-  //         mobileWebUrl: 'https://hopo2020.github.io/wedding/',
-  //         webUrl: 'https://hopo2020.github.io/wedding/',
-  //       },
-  //     },
-  //   ],
-  // })
 
     var cnt = 0
     $('.demo').on('click', function() {
