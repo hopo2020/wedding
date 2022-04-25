@@ -23,6 +23,10 @@
   <a id="create-kakao-link-btn4" href="javascript:;">
   	<button>부모님용 (계좌번호 없음)</button>
   </a>
+
+  <a id="create-kakao-link-btn5" href="javascript:;">
+    <button>창봉이형 감사합니다.</button>
+  </a>
 </div>
 
 <style>
@@ -148,6 +152,31 @@ Kakao.Link.createDefaultButton({
     ],
   });
 
+Kakao.Link.createDefaultButton({
+    container: '#create-kakao-link-btn5',
+    objectType: 'location',
+    address: '서울 종로구 지봉로 19 시즌빌딩 11층',
+    addressTitle: 'SW컨벤션센터',
+    content: {
+      title: '창봉이형 감사합니다.',
+      description: '2022. 06. 12. 11:00\n동묘앞역 SW컨벤션센터',
+      imageUrl:
+        'https://hopo2020.github.io/wedding/img/v5.jpg',
+      link: {
+        mobileWebUrl: 'https://hopo2020.github.io/wedding/friend',
+        webUrl: 'https://hopo2020.github.io/wedding/friend',
+      },
+    },
+    buttons: [
+      {
+        title: '웹으로 보기',
+        link: {
+          mobileWebUrl: 'https://hopo2020.github.io/wedding/friend',
+          webUrl: 'https://hopo2020.github.io/wedding/friend',
+        },
+      },
+    ],
+  });
 
 
 
