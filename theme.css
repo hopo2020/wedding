@@ -228,7 +228,7 @@ footer {
 
 
 .carousel-control-prev, .carousel-control-next {
-    width: 30%;
+    width: 20%;
     
 }
 
@@ -242,3 +242,18 @@ footer {
 .custom_typecontrol .selected_btn:hover {color:#fff;}   
 .hidden {display: none;}
 #panel {z-index: 1; width:100%; height: 350px; position: absolute; top:0;}
+
+.carousel-indicators{
+    margin-bottom: 0.3rem;
+}
+.carousel-indicators [data-bs-target] {
+    background: #999;
+    background-clip: padding-box;
+    height: 5px;
+}
+.fa-angle-left, .fa-angle-right {
+  -webkit-text-stroke: 1px #000;
+  color: #fff;
+  font-size: 3em;
+  opacity: 0.6;
+}
