@@ -247,9 +247,13 @@ footer {
     margin-bottom: 0.3rem;
 }
 .carousel-indicators [data-bs-target] {
-    background: #999;
+    background: #aaa;
     background-clip: padding-box;
     height: 5px;
+    opacity: 0.3;
+}
+.carousel-indicators .active {
+    opacity: 1;
 }
 .fa-angle-left, .fa-angle-right {
   -webkit-text-stroke: 1px #000;
